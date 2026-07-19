@@ -1,5 +1,5 @@
 ```
-# Go-specific ignores
+# Go build artifacts
 *.o
 *.a
 *.so
@@ -8,30 +8,30 @@
 *.exe
 *.out
 
+# Go cache directories
+_gopath/
+pkg/
+bin/
+
 # Dependencies
 vendor/
 
-# Build artifacts
-bin/
-pkg/
-*.test
-*.prof
+# Logs and temp files
+*.log
+*.tmp
 
 # Environment
 .env
 .env.local
 .env.*
 
-# Logs
-*.log
-
-# IDE/Editor
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
 
@@ -40,8 +40,18 @@ coverage/
 htmlcov/
 .coverage
 
-# Cache
-.cache/
-.mypy_cache/
-.pytest_cache/
+# Build outputs
+dist/
+build/
+target/
+
+# Python related (if mixed project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
 ```
