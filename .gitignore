@@ -1,47 +1,25 @@
 ```
-# Go-specific ignores
+# Compiled and build artifacts
 *.o
-*.a
-*.so
-*.dylib
-*.dll
-*.exe
+*.obj
 *.out
 
 # Dependencies
 vendor/
 
-# Build artifacts
-bin/
-pkg/
-*.test
-*.prof
+# Logs and temp files
+*.log
+*.tmp
 
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# Logs
-*.log
-
-# IDE/Editor
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# Cache
-.cache/
-.mypy_cache/
-.pytest_cache/
+# Original rules preserved
+*.log
 ```
