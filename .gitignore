@@ -1,17 +1,8 @@
 ```
-# Go build artifacts
+# Compiled and build artifacts
 *.o
-*.a
-*.so
-*.dylib
-*.dll
-*.exe
+*.obj
 *.out
-
-# Go cache directories
-_gopath/
-pkg/
-bin/
 
 # Dependencies
 vendor/
@@ -23,35 +14,12 @@ vendor/
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# Build outputs
-dist/
-build/
-target/
-
-# Python related (if mixed project)
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
+# Original rules preserved
+*.log
 ```
